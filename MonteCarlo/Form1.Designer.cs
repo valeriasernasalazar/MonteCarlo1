@@ -37,19 +37,19 @@
             label1.AutoSize = true;
             label1.Location = new Point(157, 61);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(133, 20);
             label1.TabIndex = 0;
-            label1.Text = "label1";
+            label1.Text = "# de Experimentos";
             label1.Click += label1_Click;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(375, 215);
+            label2.Location = new Point(157, 117);
             label2.Name = "label2";
-            label2.Size = new Size(50, 20);
+            label2.Size = new Size(92, 20);
             label2.TabIndex = 1;
-            label2.Text = "label2";
+            label2.Text = "# de Paneles";
             // 
             // Form1
             // 
