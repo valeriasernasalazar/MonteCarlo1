@@ -11,5 +11,10 @@ namespace MonteCarlo
         {
             // Esto es algo que comenté
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
