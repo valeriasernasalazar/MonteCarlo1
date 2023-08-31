@@ -41,17 +41,25 @@ namespace MonteCarlo
                 return;
             }
 
+            // segundo if para que los paramaetros de paneles sea maximo 5
+            if(Convert.ToInt32(textBox2.Text) > 6)
+            {
+                MessageBox.Show("Numero Máximo de paneles excedido");
+                return;
+            }
+
+
             // Inicialización de parámetros
 
-            int rows = Convert.ToInt32(textBox1.Text);
-            int cols = Convert.ToInt32(textBox2.Text);
+            int rows = Convert.ToInt32(textBox1.Text); // Numero de experimentos
+            int cols = Convert.ToInt32(textBox2.Text); // Numero de paneles
             double lim_inf = Convert.ToDouble(textBox3.Text);
             double lim_sup = Convert.ToDouble(textBox4.Text);
 
             SimulacionMonteCarlo simulacion = new SimulacionMonteCarlo(); // se crea una instancia de la clase
             (double avg, double var) = simulacion.Algoritmo(rows, cols, lim_inf, lim_sup);
 
-            MessageBox.Show($"Promedio: {avg}\nVarianza: {var}");
+            MessageBox.Show($"Promedio: {avg}\nVarianza: {var}"); 
 
         }
 

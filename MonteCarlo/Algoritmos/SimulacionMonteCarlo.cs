@@ -39,6 +39,7 @@ namespace MonteCarlo.Algoritmos
 
             double avg = sumaCols / rows; // calculo el promedio
             double var = (colSelecCuadrado / rows-1) - Math.Pow(avg, 2); //calculo la varianza
+            
 
 
             return (avg, var);
